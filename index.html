@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <fieldset>
+            <h1>Software Request</h1>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Nama*</label>
+                    <input id="name" name="name" required type="text">
+                </div>
+                <div class="form-group">
+                    <label for="employee-id">Employee ID*</label>
+                    <input id="employee-id" name="employee-id" required type="text">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email*</label>
+                    <input id="email" name="email" required type="email">
+                </div>
+                <div class="form-group">
+                    <label for="mobile">Mobile No</label>
+                    <input id="mobile" name="mobile" type="text">
+                </div>
+                <div class="form-group">
+                    <p>Which software do you require*</p>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="software" value="Web Developer"> Web Developer</label>
+                        <label><input type="checkbox" name="software" value="Android Developer"> Android Developer</label>
+                        <label><input type="checkbox" name="software" value="Full Stack Developer"> Full Stack Developer</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <p>How urgently do you need it*</p>
+                    <div class="checkbox-group">
+                        <label><input type="radio" name="urgency" value="As soon as possible"> As soon as possible</label>
+                        <label><input type="radio" name="urgency" value="Within 2 to 3 weeks"> Within 2 to 3 weeks</label>
+                        <label><input type="radio" name="urgency" value="No hurry"> I'm in no hurry</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn-login">Request</button>
+                </div>
+            </form>
+        </fieldset>
+    </div>
+</body>
+</html>
